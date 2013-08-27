@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : decorators.xml
+    Created on : May 2, 2013, 6:34 PM
+    Author     : Muhammad Sidratul M
+    Description:
+        Purpose of the document follows.
+-->
+
+<decorators defaultdir="/WEB-INF/decorators">    
+  <!-- Excludes will never be decorated by Sitemesh. -->
+  <excludes>
+    <pattern>/aplikasi/login/**</pattern>
+  </excludes>
+ 
+  <decorator name="layout-dasar" page="layout-dasar.jsp">
+    <pattern>/*</pattern>
+  </decorator>
+</decorators>
